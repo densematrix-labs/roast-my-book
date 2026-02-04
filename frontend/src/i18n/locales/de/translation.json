@@ -1,34 +1,34 @@
 {
-  "appTitle": "AI Buch-Roast Generator",
-  "subtitle": "Erstelle lustige Buchkritiken in verschiedenen Stilen",
+  "appTitle": "Buch-Roast",
+  "subtitle": "Gnadenlose KI-generierte Buchkritiken im Stil deiner Wahl",
   "bookNameLabel": "Buchtitel",
-  "bookNamePlaceholder": "Buchtitel oder Buchbeschreibung eingeben...",
-  "styleLabel": "Kritik-Stil",
+  "bookNamePlaceholder": "Buchtitel oder Beschreibung eingeben…",
+  "styleLabel": "Stil",
   "styles": {
-    "toxic": "🔥 Bissig/Sarkastisch",
-    "literary": "📚 Literatur-Hipster", 
-    "chuunibyou": "⚡ Chuunibyou",
-    "zhenhuan": "👑 Palast-Drama",
-    "luxun": "📝 Lu Xun Stil",
-    "shakespeare": "🎭 Shakespeare-Stil"
+    "toxic": "Bissig",
+    "literary": "Literatur-Hipster",
+    "chuunibyou": "Chuunibyou",
+    "zhenhuan": "Palast-Drama",
+    "luxun": "Lu Xun",
+    "shakespeare": "Shakespeare"
   },
   "generateButton": "Kritik erstellen",
-  "copyButton": "📋 Kopieren",
-  "shareButton": "📤 Teilen",
-  "generating": "Wird erstellt...",
-  "error": "Fehler aufgetreten",
-  "copySuccess": "In Zwischenablage kopiert!",
+  "copyButton": "Kopieren",
+  "shareButton": "Teilen",
+  "generating": "Wird geschrieben…",
+  "error": "Etwas ist schiefgelaufen. Bitte erneut versuchen.",
+  "copySuccess": "Kopiert",
   "copyError": "Kopieren fehlgeschlagen",
-  "reviewTitle": "Generierte Kritik",
+  "reviewTitle": "Kritik",
   "language": "Sprache",
   "languages": {
-    "en": "🇺🇸 English",
-    "zh": "🇨🇳 中文",
-    "ja": "🇯🇵 日本語",
-    "de": "🇩🇪 Deutsch", 
-    "fr": "🇫🇷 Français",
-    "ko": "🇰🇷 한국어",
-    "es": "🇪🇸 Español"
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "de": "Deutsch",
+    "fr": "Français",
+    "ko": "한국어",
+    "es": "Español"
   },
-  "footer": "Mit ❤️ erstellt von DenseMatrix Labs"
+  "footer": "DenseMatrix Labs"
 }

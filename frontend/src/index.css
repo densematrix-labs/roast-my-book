@@ -1,4 +1,4 @@
-/* Reset — clean slate, no Vite defaults */
+/* === Reset === */
 *,
 *::before,
 *::after {
@@ -7,16 +7,62 @@
   box-sizing: border-box;
 }
 
+/* === Design Tokens === */
+:root {
+  /* Parchment palette */
+  --bg-primary: #f5f0e8;
+  --bg-secondary: #ede6d6;
+  --bg-card: #faf7f0;
+  --bg-input: #fff;
+
+  /* Ink colors */
+  --text-primary: #2c2416;
+  --text-secondary: #5c4f3a;
+  --text-muted: #8a7d6b;
+
+  /* Accent — deep burgundy/oxblood */
+  --accent: #8b2500;
+  --accent-hover: #6b1c00;
+  --accent-light: rgba(139, 37, 0, 0.08);
+
+  /* Borders */
+  --border: #d4c9b4;
+  --border-light: #e5ddd0;
+
+  /* Misc */
+  --rule-color: #c4b89c;
+  --shadow: 0 1px 3px rgba(44, 36, 22, 0.06);
+
+  /* Typography */
+  --font-display: 'Playfair Display', 'Noto Serif SC', 'Noto Serif JP', 'Noto Serif KR', Georgia, serif;
+  --font-body: 'Source Serif 4', 'Noto Serif SC', 'Noto Serif JP', 'Noto Serif KR', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
 html, body, #root {
   width: 100%;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle paper texture via noise */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
 }

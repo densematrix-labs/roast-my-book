@@ -1,34 +1,34 @@
 {
-  "appTitle": "Generador AI de Reseñas Mordaces",
-  "subtitle": "Genera reseñas de libros divertidas en varios estilos",
+  "appTitle": "Reseña Mordaz",
+  "subtitle": "Reseñas literarias despiadadas generadas por IA, en el estilo que elijas",
   "bookNameLabel": "Título del libro",
-  "bookNamePlaceholder": "Ingresa el título o descripción del libro...",
-  "styleLabel": "Estilo de reseña",
+  "bookNamePlaceholder": "Ingresa el título o descripción del libro…",
+  "styleLabel": "Estilo",
   "styles": {
-    "toxic": "🔥 Tóxico/Sarcástico",
-    "literary": "📚 Hipster Literario", 
-    "chuunibyou": "⚡ Chuunibyou",
-    "zhenhuan": "👑 Drama de Palacio",
-    "luxun": "📝 Estilo Lu Xun",
-    "shakespeare": "🎭 Shakespeariano"
+    "toxic": "Tóxico",
+    "literary": "Hipster Literario",
+    "chuunibyou": "Chuunibyou",
+    "zhenhuan": "Drama de Palacio",
+    "luxun": "Lu Xun",
+    "shakespeare": "Shakespeariano"
   },
   "generateButton": "Generar reseña",
-  "copyButton": "📋 Copiar",
-  "shareButton": "📤 Compartir",
-  "generating": "Generando...",
-  "error": "Error ocurrido",
-  "copySuccess": "¡Copiado al portapapeles!",
+  "copyButton": "Copiar",
+  "shareButton": "Compartir",
+  "generating": "Escribiendo…",
+  "error": "Algo salió mal. Inténtalo de nuevo.",
+  "copySuccess": "Copiado",
   "copyError": "Error al copiar",
-  "reviewTitle": "Reseña generada",
+  "reviewTitle": "Reseña",
   "language": "Idioma",
   "languages": {
-    "en": "🇺🇸 English",
-    "zh": "🇨🇳 中文",
-    "ja": "🇯🇵 日本語",
-    "de": "🇩🇪 Deutsch", 
-    "fr": "🇫🇷 Français",
-    "ko": "🇰🇷 한국어",
-    "es": "🇪🇸 Español"
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "de": "Deutsch",
+    "fr": "Français",
+    "ko": "한국어",
+    "es": "Español"
   },
-  "footer": "Hecho con ❤️ por DenseMatrix Labs"
+  "footer": "DenseMatrix Labs"
 }
