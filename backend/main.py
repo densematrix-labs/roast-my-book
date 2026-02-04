@@ -27,7 +27,7 @@ LLM_PROXY_KEY = "sk-wskhgeyawc"
 LLM_MODEL = "gemini-2.5-flash"
 
 class ReviewRequest(BaseModel):
-    book_name: str
+    book_name: str  # min_length validated manually for better error msg
     style: Literal["toxic", "literary", "chuunibyou", "zhenhuan", "luxun", "shakespeare"]
     language: Literal["en", "zh", "ja", "de", "fr", "ko", "es"] = "zh"
 
@@ -92,12 +92,11 @@ async def health_check():
 @app.post("/api/generate-review", response_model=ReviewResponse)
 async def generate_review(request: ReviewRequest):
     """生成书评"""
+    if not request.book_name or not request.book_name.strip():
+        raise HTTPException(status_code=400, detail="书名不能为空")
     try:
         # 根据语言选择提示词模板
         style_prompts = STYLE_PROMPTS_EN if request.language == "en" else STYLE_PROMPTS_ZH
-        
-        if request.style not in style_prompts:
-            raise HTTPException(status_code=400, detail=f"不支持的风格: {request.style}")
         
         # 构建提示词
         style_instruction = style_prompts[request.style]
