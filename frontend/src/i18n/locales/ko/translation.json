@@ -1,0 +1,34 @@
+{
+  "appTitle": "AI 독설 서평 생성기",
+  "subtitle": "다양한 스타일의 재미있는 서평을 AI로 생성",
+  "bookNameLabel": "책 제목",
+  "bookNamePlaceholder": "책 제목이나 소개를 입력하세요...",
+  "styleLabel": "서평 스타일",
+  "styles": {
+    "toxic": "🔥 독설/풍자",
+    "literary": "📚 문학청년", 
+    "chuunibyou": "⚡ 중2병",
+    "zhenhuan": "👑 궁중드라마",
+    "luxun": "📝 루쉰체",
+    "shakespeare": "🎭 셰익스피어체"
+  },
+  "generateButton": "서평 생성",
+  "copyButton": "📋 복사",
+  "shareButton": "📤 공유",
+  "generating": "생성 중...",
+  "error": "오류 발생",
+  "copySuccess": "클립보드에 복사됨!",
+  "copyError": "복사 실패",
+  "reviewTitle": "생성된 서평",
+  "language": "언어",
+  "languages": {
+    "en": "🇺🇸 English",
+    "zh": "🇨🇳 中文",
+    "ja": "🇯🇵 日本語",
+    "de": "🇩🇪 Deutsch", 
+    "fr": "🇫🇷 Français",
+    "ko": "🇰🇷 한국어",
+    "es": "🇪🇸 Español"
+  },
+  "footer": "❤️ 로 제작 by DenseMatrix Labs"
+}

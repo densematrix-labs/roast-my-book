@@ -1,0 +1,34 @@
+{
+  "appTitle": "AI Book Roast Generator",
+  "subtitle": "Generate hilarious book reviews in various styles",
+  "bookNameLabel": "Book Name",
+  "bookNamePlaceholder": "Enter book name or paste book description...",
+  "styleLabel": "Review Style",
+  "styles": {
+    "toxic": "🔥 Toxic/Sarcastic",
+    "literary": "📚 Literary Hipster", 
+    "chuunibyou": "⚡ Chuunibyou",
+    "zhenhuan": "👑 Palace Drama",
+    "luxun": "📝 Lu Xun Style",
+    "shakespeare": "🎭 Shakespearean"
+  },
+  "generateButton": "Generate Review",
+  "copyButton": "📋 Copy",
+  "shareButton": "📤 Share",
+  "generating": "Generating...",
+  "error": "Error occurred",
+  "copySuccess": "Copied to clipboard!",
+  "copyError": "Copy failed",
+  "reviewTitle": "Generated Review",
+  "language": "Language",
+  "languages": {
+    "en": "🇺🇸 English",
+    "zh": "🇨🇳 中文",
+    "ja": "🇯🇵 日本語",
+    "de": "🇩🇪 Deutsch", 
+    "fr": "🇫🇷 Français",
+    "ko": "🇰🇷 한국어",
+    "es": "🇪🇸 Español"
+  },
+  "footer": "Made with ❤️ by DenseMatrix Labs"
+}

@@ -1,0 +1,34 @@
+{
+  "appTitle": "Generador AI de Reseñas Mordaces",
+  "subtitle": "Genera reseñas de libros divertidas en varios estilos",
+  "bookNameLabel": "Título del libro",
+  "bookNamePlaceholder": "Ingresa el título o descripción del libro...",
+  "styleLabel": "Estilo de reseña",
+  "styles": {
+    "toxic": "🔥 Tóxico/Sarcástico",
+    "literary": "📚 Hipster Literario", 
+    "chuunibyou": "⚡ Chuunibyou",
+    "zhenhuan": "👑 Drama de Palacio",
+    "luxun": "📝 Estilo Lu Xun",
+    "shakespeare": "🎭 Shakespeariano"
+  },
+  "generateButton": "Generar reseña",
+  "copyButton": "📋 Copiar",
+  "shareButton": "📤 Compartir",
+  "generating": "Generando...",
+  "error": "Error ocurrido",
+  "copySuccess": "¡Copiado al portapapeles!",
+  "copyError": "Error al copiar",
+  "reviewTitle": "Reseña generada",
+  "language": "Idioma",
+  "languages": {
+    "en": "🇺🇸 English",
+    "zh": "🇨🇳 中文",
+    "ja": "🇯🇵 日本語",
+    "de": "🇩🇪 Deutsch", 
+    "fr": "🇫🇷 Français",
+    "ko": "🇰🇷 한국어",
+    "es": "🇪🇸 Español"
+  },
+  "footer": "Hecho con ❤️ por DenseMatrix Labs"
+}

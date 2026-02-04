@@ -1,0 +1,34 @@
+{
+  "appTitle": "Générateur AI de Critiques Cinglantes",
+  "subtitle": "Générez des critiques de livres hilarantes dans divers styles",
+  "bookNameLabel": "Titre du livre",
+  "bookNamePlaceholder": "Entrez le titre ou la description du livre...",
+  "styleLabel": "Style de critique",
+  "styles": {
+    "toxic": "🔥 Toxique/Sarcastique",
+    "literary": "📚 Hipster Littéraire", 
+    "chuunibyou": "⚡ Chuunibyou",
+    "zhenhuan": "👑 Drame de Palais",
+    "luxun": "📝 Style Lu Xun",
+    "shakespeare": "🎭 Shakespearien"
+  },
+  "generateButton": "Générer la critique",
+  "copyButton": "📋 Copier",
+  "shareButton": "📤 Partager",
+  "generating": "Génération...",
+  "error": "Erreur survenue",
+  "copySuccess": "Copié dans le presse-papiers !",
+  "copyError": "Échec de la copie",
+  "reviewTitle": "Critique générée",
+  "language": "Langue",
+  "languages": {
+    "en": "🇺🇸 English",
+    "zh": "🇨🇳 中文",
+    "ja": "🇯🇵 日本語",
+    "de": "🇩🇪 Deutsch", 
+    "fr": "🇫🇷 Français",
+    "ko": "🇰🇷 한국어",
+    "es": "🇪🇸 Español"
+  },
+  "footer": "Fait avec ❤️ par DenseMatrix Labs"
+}
