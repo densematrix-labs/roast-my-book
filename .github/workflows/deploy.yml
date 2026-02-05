@@ -52,7 +52,8 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
             cd ${{ env.DEPLOY_PATH }}
-            docker compose down
+            docker compose down --remove-orphans || true
+            docker rm -f roast-my-book-postgres roast-my-book-backend roast-my-book-frontend 2>/dev/null || true
             docker compose up -d --build
             
       - name: Health check
