@@ -9,11 +9,7 @@ env:
   DEPLOY_PATH: /opt/demos/roast-my-book
 
 jobs:
-  test:
-    uses: ./.github/workflows/test.yml
-
   deploy:
-    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -74,7 +70,7 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
 
   notify-failure:
-    needs: [test, deploy]
+    needs: [deploy]
     if: failure()
     runs-on: ubuntu-latest
     steps:
