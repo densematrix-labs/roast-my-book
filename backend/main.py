@@ -1,16 +1,21 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from prometheus_fastapi_instrumentator import Instrumentator
 import httpx
 import os
 from typing import Literal
 import logging
+from metrics import record_generation, generation_timer
 
 # 配置日志
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = FastAPI(title="AI 毒舌书评生成器", version="1.0.0")
+
+# Prometheus metrics
+Instrumentator().instrument(app).expose(app, endpoint="/api/metrics")
 
 # CORS 配置
 app.add_middleware(
