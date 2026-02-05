@@ -9,11 +9,13 @@ const mockFetch = vi.fn()
 globalThis.fetch = mockFetch
 
 // Mock clipboard API
-const mockWriteText = vi.fn()
-Object.assign(navigator, {
-  clipboard: {
+const mockWriteText = vi.fn().mockResolvedValue(undefined)
+Object.defineProperty(navigator, 'clipboard', {
+  value: {
     writeText: mockWriteText,
   },
+  writable: true,
+  configurable: true,
 })
 
 describe('App', () => {
