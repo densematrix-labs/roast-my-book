@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roast-my-book.demo.densematrix.ai/sitemap.xml
