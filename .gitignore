@@ -1,0 +1,12 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.env
+.venv
+.coverage
+*.egg-info/
+
+# Programmatic SEO (generated at build time)
+frontend/public/p/
+frontend/public/sitemap-programmatic.xml

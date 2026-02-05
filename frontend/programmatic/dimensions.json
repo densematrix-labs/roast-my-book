@@ -1,0 +1,30 @@
+{
+  "tool": "Roast My Book",
+  "tool_url": "https://roast-my-book.demo.densematrix.ai",
+  "dimensions": [
+    {
+      "name": "genre",
+      "name_zh": "书籍类型",
+      "values_en": ["romance", "thriller", "fantasy", "sci-fi", "self-help", "business", "biography", "mystery", "horror", "literary-fiction"],
+      "values_zh": ["言情", "悬疑", "奇幻", "科幻", "自助", "商业", "传记", "推理", "恐怖", "文学小说"]
+    },
+    {
+      "name": "style",
+      "name_zh": "吐槽风格",
+      "values_en": ["sarcastic", "brutal", "witty", "academic", "dramatic", "deadpan", "absurdist"],
+      "values_zh": ["讽刺", "毒舌", "机智", "学术", "戏剧化", "冷面", "荒诞"]
+    },
+    {
+      "name": "target",
+      "name_zh": "吐槽对象",
+      "values_en": ["plot", "characters", "writing-style", "cover", "title", "ending", "premise"],
+      "values_zh": ["情节", "人物", "文风", "封面", "书名", "结局", "设定"]
+    }
+  ],
+  "combinations": [
+    ["genre", "style"],
+    ["genre", "target"],
+    ["style", "target"]
+  ],
+  "estimated_pages": 189
+}
