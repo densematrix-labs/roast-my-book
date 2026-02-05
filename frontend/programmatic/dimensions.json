@@ -1,30 +1,69 @@
 {
-  "tool": "Roast My Book",
   "tool_url": "https://roast-my-book.demo.densematrix.ai",
-  "dimensions": [
-    {
-      "name": "genre",
-      "name_zh": "书籍类型",
-      "values_en": ["romance", "thriller", "fantasy", "sci-fi", "self-help", "business", "biography", "mystery", "horror", "literary-fiction"],
-      "values_zh": ["言情", "悬疑", "奇幻", "科幻", "自助", "商业", "传记", "推理", "恐怖", "文学小说"]
+  "dimensions": {
+    "genre": {
+      "values": [
+        {"id": "romance", "en": "Romance"},
+        {"id": "fantasy", "en": "Fantasy"},
+        {"id": "scifi", "en": "Sci-Fi"},
+        {"id": "mystery", "en": "Mystery"},
+        {"id": "thriller", "en": "Thriller"},
+        {"id": "horror", "en": "Horror"},
+        {"id": "literary", "en": "Literary Fiction"},
+        {"id": "ya", "en": "Young Adult"},
+        {"id": "childrens", "en": "Children's"},
+        {"id": "memoir", "en": "Memoir"},
+        {"id": "self-help", "en": "Self-Help"},
+        {"id": "business", "en": "Business"},
+        {"id": "history", "en": "History"},
+        {"id": "biography", "en": "Biography"},
+        {"id": "poetry", "en": "Poetry"},
+        {"id": "cookbook", "en": "Cookbook"},
+        {"id": "travel", "en": "Travel"},
+        {"id": "true-crime", "en": "True Crime"},
+        {"id": "graphic-novel", "en": "Graphic Novel"},
+        {"id": "short-stories", "en": "Short Stories"}
+      ]
     },
-    {
-      "name": "style",
-      "name_zh": "吐槽风格",
-      "values_en": ["sarcastic", "brutal", "witty", "academic", "dramatic", "deadpan", "absurdist"],
-      "values_zh": ["讽刺", "毒舌", "机智", "学术", "戏剧化", "冷面", "荒诞"]
+    "roast_style": {
+      "values": [
+        {"id": "brutal", "en": "Brutally Honest"},
+        {"id": "sarcastic", "en": "Sarcastic"},
+        {"id": "witty", "en": "Witty"},
+        {"id": "academic", "en": "Academic"},
+        {"id": "dramatic", "en": "Dramatic"},
+        {"id": "gentle", "en": "Gentle Roast"},
+        {"id": "absurd", "en": "Absurdist"},
+        {"id": "poetic", "en": "Poetic"},
+        {"id": "professional", "en": "Professional Critique"},
+        {"id": "meme", "en": "Meme-Style"}
+      ]
     },
-    {
-      "name": "target",
-      "name_zh": "吐槽对象",
-      "values_en": ["plot", "characters", "writing-style", "cover", "title", "ending", "premise"],
-      "values_zh": ["情节", "人物", "文风", "封面", "书名", "结局", "设定"]
+    "target": {
+      "values": [
+        {"id": "plot", "en": "Plot"},
+        {"id": "characters", "en": "Characters"},
+        {"id": "writing", "en": "Writing Style"},
+        {"id": "pacing", "en": "Pacing"},
+        {"id": "dialogue", "en": "Dialogue"},
+        {"id": "worldbuilding", "en": "World Building"},
+        {"id": "ending", "en": "Ending"},
+        {"id": "cover", "en": "Book Cover"},
+        {"id": "title", "en": "Title"},
+        {"id": "overall", "en": "Overall"}
+      ]
+    },
+    "famous_critic": {
+      "values": [
+        {"id": "hemingway", "en": "Hemingway Style"},
+        {"id": "shakespeare", "en": "Shakespearean"},
+        {"id": "wilde", "en": "Oscar Wilde"},
+        {"id": "twain", "en": "Mark Twain"},
+        {"id": "austen", "en": "Jane Austen"},
+        {"id": "poe", "en": "Edgar Allan Poe"},
+        {"id": "lovecraft", "en": "Lovecraft"},
+        {"id": "tolkien", "en": "Tolkien"}
+      ]
     }
-  ],
-  "combinations": [
-    ["genre", "style"],
-    ["genre", "target"],
-    ["style", "target"]
-  ],
-  "estimated_pages": 189
+  }
 }
